@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Granada";
+    src: url("./assets/fonts/Granada/Granada-DemiBold\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+}
+
+h1{
+    font-family: "Granada";
+}
+
+h2{
+    font-family: "Outfit";
+}
+
+body{
+    background-color: #fdf8f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%; 
+    max-width: 780px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.recipe-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.main-title{
+    font-size: 40px;
+    font-weight: 400;
+    color: #333333;
+    margin: 20px 0px;
+}
+
+.sub-title{
+    font-size: 18px;
+    font-weight: 500;
+    color:#706e66;
+}
+
+.prep-time{
+    background-color: #fff7f1;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.prep{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    color: #7b4165;
+}
+
+.list li::marker{
+    color: #7b4165;
+}
+
+
+li{
+    font-family: "Outfit";
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    list-style:disc;
+    color: #706e66;
+}
+
+li::marker{
+    color: #8a4a3a;
+}
+
+ol li{
+    padding-left: 20px;
+}
+
+.ingredients{
+    font-size: 30px;
+    font-weight: 400;
+    color: #8a4a3a;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 30px;
+}
+
+.number{
+    list-style: decimal;
+}
+
+.Nutrient-table{
+    margin-left: 35px;
+    width: 48%;
+}
+
+.align{
+    display: flex;
+}
+
+.sub{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8a4a3a;    
+}
+
+.lines{
+    margin-top: 0px;
+}
+
+@media (max-width: 475px) {
+    .card{
+        margin: 0px;
+        border-radius: 0px;
+        padding: 30px;
+    }
+
+    .main-title{
+        line-height: 2.5rem;
+    }
+
+    .card .recipe-img{
+        border-radius: 0px;
+        margin-top: -30px;
+        max-width: calc(100% + 60px);
+        margin-left: -30px;
+    }
+
+    ol li{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .card{
+        margin: 0px;
+    }
+    
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
